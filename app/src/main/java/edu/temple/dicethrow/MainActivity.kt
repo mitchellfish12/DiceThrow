@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.add(R.id.dieContainer, dieFragment)
         fragmentTransaction.commit()
 
+        if fmffbId()!is DieFragment{
+            add()
+        }
+
     }
 
 }

@@ -47,10 +47,10 @@ class DieFragment : Fragment() {
         dieTextView.text = ((Random.nextInt(dieSides)+1).toString())
     }
 
-        fun newInstance(sides: Int) = DieFragment().apply {
-            arguments = Bundle().apply { putInt(DIESIDE, sides) }
-        }
+    fun newInstance(sides: Int) = DieFragment().apply {
+        arguments = Bundle().apply { putInt(DIESIDE, sides) }
     }
+}
 
 
 
