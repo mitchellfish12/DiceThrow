@@ -16,5 +16,12 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             (supportFragmentManager.findFragmentById(R.id.dieContainer)as DieFragment).throwDie()
         }
+
+        val dieFragment = DieFragment()
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.add(R.id.dieContainer, dieFragment)
+        fragmentTransaction.commit()
+
     }
+
 }
